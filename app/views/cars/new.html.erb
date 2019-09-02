@@ -1,0 +1,13 @@
+<br />
+<div class="booyah-box col-10 offset-1">
+  <h1>Add your favorite car</h1>
+  <%= simple_form_for @car, url: cars_path do |f| %>
+    <%= f.input :car_make %>
+    <%= f.input :car_model %>
+    <%= f.input :car_year %>
+    <br />
+    <%= f.submit "Add Car", class: 'btn btn-primary' %>
+    <br />
+  <% end %>
+  <br />
+</div>*

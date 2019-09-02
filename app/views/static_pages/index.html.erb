@@ -1,9 +1,16 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center">Welcome to My Rails Application</h1>
+  <br />
+  <div class="text-center">
+    <p>This application is brought to you by Daniel Ayala.</p>
 
-  <p>This application is brought to you by Daniel Ayala.</p>
+    <p>This will be an application that is all about favorite cars. Add your favorite car to our list!</p>
 
-  <p>This is a quiz exercise to demonstrate a basic understanding of building Rails web applications. More to come.</p>
+    <%= image_tag image_url('audi1.jpg'), class: "img-fluid" %>
 
-  <%= image_tag image_url('coding.jpg'), class: "img-fluid" %>
+    <br class="clear" />
+    <%= link_to 'Our favorite cars...', car_list_path, class: 'btn btn-primary btn-large float-left' %>
+    <%= link_to 'Add a car...', new_car_path, class: 'btn btn-primary btn-large float-right' %>
+    <br class="clear" />
+  </div>
 </div>

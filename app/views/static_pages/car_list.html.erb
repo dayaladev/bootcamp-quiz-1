@@ -1,0 +1,11 @@
+<div class="booyah-box col-10 offset-1">
+  <%= link_to 'Home', root_path, class: 'btn btn-primary btn-large float-left' %>
+  <h1 class="text-center">Our Favorite Cars</h1>
+  <br />
+  <div class="text-center">
+    <% @cars.each do |car| %>
+      <%= car.car_year %> <%= car.car_make %> <%= car.car_model %>
+      <br />
+    <% end %>
+  </div>
+</div>
